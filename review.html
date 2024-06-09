@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>Reviews</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+
+    <div class="navbar">
+        <div class="left">
+            <a href="home.html">
+                <img src="Images/headertransparent1.png" alt="lazeeza logo" class="headerimage">
+            </a>
+        </div>
+        <div class="right">
+            <a href="review.html" target="_self"><button class="link">Reviews</button></a>
+            <a href="about.html" target="_self"><button class="link">About Us</button></a>
+            <a href="reserve.html" target="_self"><button class="link">Reservations</button></a>
+            <a href="contact.html" target="_self"><button class="link">Contact Us</button></a>
+            <a href="menu.html" target="_self"><button class="link">Menu</button></a>
+            <a href="home.html" target="_self"><button class="link">Home</button></a>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Reviews</h1>
+        <h2>RATE YOUR EXPERIENCE</h2>
+        <p>Lazeeza wants to make rating your customer experience easy.</p>
+    </div>
+
+    <div class="review">
+        <div class="stars">
+            <h3 class="starh3">4.2/5</h3>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <form action="mailto:lazeezalouisville@example.com">
+            <div class="content">
+                <label for="rating">How Many Stars?</label><br>
+                <input type="text" placeholder="Rating (ie: 1-5)" required name="rating" id="rating"><br>
+                <label for="review">Leave a Note (Optional)</label><br>
+                <input type="text" placeholder="Review" name="review" id="review">
+            </div>
+            <div class="submit">
+                <input type="button"
+                    onclick="alert('Thank you for reviewing our restaurant. It is customers like you who make a difference!')"
+                    value="Submit" id="submit">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*########################### MENU BELOW ###########################*/
+
+body {
+    background-color: rgb(228, 231, 212);
+}
+
+/* Header Margin */
+
+.header {
+    margin-top: 120px;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    color: rgb(32, 40, 46);
+    background-color: rgb(228, 231, 212);
+}
+
+/* Header 1, 2, p Configurations */
+
+.header h1 {
+    width: 100%;
+    color: rgb(32, 40, 46);
+    background-color: rgb(228, 231, 212);
+    font-family: 'Raleway', sans-serif;
+    font-size: 60pt;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+}
+
+.title {
+    width: 100%;
+    color: rgb(228, 231, 212);
+    background-color: rgb(32, 40, 46);
+    font-family: 'Raleway', sans-serif;
+    font-size: 25pt;
+    justify-content: center;
+    text-align: center;
+    padding: 75px 0;
+}
+/* Mission Div */
+
+.mission {
+    padding: 3% 25%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    color: rgb(32, 40, 46);
+}
+/* Chef Div */
+
+.r1, .r2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+}
+
+.img {
+    width: 100%;
+    float: left;
+}
+
+.p {
+    width: 95%;
+    margin: auto;
+    font-family: "Raleway", sans-serif;
+    color: rgb(32, 40, 46);
+    font-size: 15pt;
+    text-align: center;
+}
+
+.leftside, .rightside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Owner Div */
+
+.owner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.owner-img {
+    text-align: center;
+}
+
+.owner-img img {
+    width: 100%;
+    padding: 15px;
+}
+
+.owner-p {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(32, 40, 46);
+    font-size: 25pt;
+}
+
+/* Location Div*/
+
+.location {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.loc {
+    padding: 7% 0;
+    background-color: #0e1317;
+}
+
+.location-p {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.location-p h3 {
+    font-size: 40pt;
+    color: rgb(228, 231, 212);
+}
+
+.location-p p {
+    font-size: 30pt;
+    color: #c59d5f;
+    margin: auto;
+}
+
+.location-img {
+    text-align: center;
+}
+
+.location-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+/* ########################### MEDIA ############################ */
+
+@media (max-width: 1330px) {
+    .header {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 830px) {
+    .header {
+        margin-top: 60px;
+    }
+
+    .r1, .r2 {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .r1 {
+        padding-bottom: 0;
+    }
+
+    .r2 {
+        padding-top: 0;
+    }
+
+    img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .p {
+        width: 90%;
+        font-size: 15pt;
+    }
+
+    .owner {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 50px;
+    }
+
+    .owner-img img {
+        width: 90%;
+    }
+
+    .owner-p {
+        font-size: 20pt;
+    }
+
+    .mission {
+        font-size: 25pt;
+        padding: 3% 10%;
+    }
+
+    .location {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    .loc {
+        margin-top: 25px;
+        padding: 5% 0;
+    }
+    
+    .location-p {
+        width: 95%;
+    }
+    
+    .location-p h3 {
+        font-size: 30pt;
+    }
+    
+    .location-p p {
+        font-size: 20pt;
+    }
+    
+    .location-img img {
+        width: 95%;
+    }
+}
+
+@media (max-width: 530px) {
+    .header {
+        margin-top: 50px;
+    }
+
+    .header h1 {
+        font-size: 30pt;
+        padding: 30px 0;
+    }
+    
+    .header h2 {
+        font-size: 15pt;
+    }
+    
+    .header p {
+        font-size: 10pt;
+        padding: 5px 20px;
+    }
+
+    .r1 {
+        padding-bottom: 0;
+    }
+
+    .r2 {
+        padding-top: 0;
+    }
+
+    .p {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        width: 90%;
+        font-size: 14pt;
+    }
+
+    .r1, .r2 {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .leftside, .rightside {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 10px;
+    }
+
+    img {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .owner {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .owner-p {
+        font-size: 18pt;
+    }
+
+    .mission {
+        font-size: 15pt;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .header {
+        margin-top: 50px;
+    }
+
+    .header h1 {
+        font-size: 70pt;
+        padding: 30px 0;
+    }
+    
+    .header h2 {
+        font-size: 30pt;
+    }
+    
+    .header p {
+        font-size: 20pt;
+        padding: 5px 50px;
+    }
+
+    .p {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width: 90%;
+        font-size: 18pt;
+    }
+
+    .r1 {
+        padding-bottom: 0;
+    }
+
+    .r2 {
+        padding-top: 0;
+    }
+
+    .r1, .r2 {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .leftside, .rightside {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 10px;
+    }
+
+    .owner {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .owner-img img {
+        width: 95%;
+    }
+
+    .owner-p {
+        font-size: 20pt;
+    }
+
+    .mission {
+        font-size: 18pt;
+        padding: 3% 10%;
+    }
+
+    .location {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .loc {
+        margin-top: 25px;
+        padding: 5% 0%;
+    }
+    
+    .location-p {
+        width: 90%;
+        padding: 0;
+    }
+    
+    .location-p h3 {
+        font-size: 30pt;
+    }
+    
+    .location-p p {
+        font-size: 20pt;
+    }
+    
+    .location-img img {
+        width: 90%;
+        text-align: center;
+    }
+
+}

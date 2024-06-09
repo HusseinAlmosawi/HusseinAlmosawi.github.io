@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left">
+            <a href="home.html">
+                <img src="Images/headertransparent1.png" alt="lazeeza logo" class="headerimage">
+            </a>
+        </div>
+        <div class="right">
+            <a href="review.html" target="_self"><button class="link">Reviews</button></a>
+            <a href="about.html" target="_self"><button class="link">About Us</button></a>
+            <a href="reserve.html" target="_self"><button class="link">Reservations</button></a>
+            <a href="contact.html" target="_self"><button class="link">Contact Us</button></a>
+            <a href="menu.html" target="_self"><button class="link">Menu</button></a>
+            <a href="home.html" target="_self"><button class="link">Home</button></a>
+        </div>
+    </div>
+    <div class="heroimage">
+        <img src="Images/hero.jpg" alt="hero image">
+        <div class="reserve">
+            <div class="hours">
+                <h1>Hours of operation</h1>
+                <p>Mon-Fri: 11AM - 10PM</p>
+                <p>Sat-Sun: 11AM - 11PM</p>
+
+            </div>
+        </div>
+    </div>
+        <div class="chefs">
+            <h1 class="chefh1">Meet our Chefs!</h1>
+            <div class="container">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="name">
+                                <h1>Tyson Jackson</h1>
+                                Executive Chef
+                            </div>
+                            <img src="Images/chef1.jpg" alt="Chef">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="name">
+                                <h1>George Ronald</h1>
+                                Head Chef
+                            </div>
+                            <img src="Images/chef2.jpg" alt="Chef">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="name">
+                                <h1>Kenny Wenn</h1>
+                                Deputy Chef
+                            </div>
+                            <img src="Images/chef3.jpg" alt="Chef">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="name">
+                                <h1>Lixin Junfeng</h1>
+                                Station Chef
+                            </div>
+                            <img src="Images/chef4.jpg" alt="Chef">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+                </div>
+                <div class="chef-info">
+                    Lazeeza is a restaurant that ensures quality halal food for everyone in the community to enjoy. There
+                    aren't many restaurants where the Islamic population can go to, since they can only eat halal food.
+                    In order to ensure top quality food, we have top quality chefs. Each chef comes from a different background in
+                    order to provide a variety of food. They all have leadership, kindness, and most importantly, they
+                    provide delicious meals.
+                    <div class="button-div">
+                        <a href="about.html" target="_self"><button class="reserve-button">Learn More</button></a>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    // Optional parameters
+                    loop: true,
+                    // If we need pagination
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    // Navigation arrows
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                });
+            </script>
+
+        </div>
+        <div class="menupreview">
+            <h1>Menu</h1>
+            <div class="menu-grid">
+                <div class="menu-info">
+                    Check out the best halal food you can find. Take a look at our menu and enjoy our wonderful prices!
+                    <div class="button-div">
+                        <a href="menu.html" target="_self"><button class="menu-button">Menu</button></a>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="Images/shawarmasandwich.jpg" alt="Shawarma">
+                </div>
+            </div>
+
+        </div>
+        <div class="reservepreview">
+            <div class="reserve-grid">
+                <div class="statistics">
+                    <div class="years">
+                        25 &#43; | Years of Experience
+                    </div>
+                    <div class="statisfied-customers">
+                        1k &#43; | Statisfied Customers
+                    </div>
+                    <div class="awards">
+                        80 &#43; | Awards Won
+
+                    </div>
+                </div>
+                <div class="reserve-div">
+                    <div class="reserve-info">
+                        Worried we might not have enough spots? Reserve yours today!
+                        <div class="button-div">
+                            <a href="reserve.html" target="_self"><button class="reserve-button">Reserve my Spot</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="basic-info-container">
+            <div class="basic-info">
+                <div class="number">
+                    Call Us:
+                    <div class="number-div">
+                        +1 (502) 555-5555
+                    </div>
+                </div>
+
+                <div class="address">
+                    Address:
+                    <div class="address-div">
+                        1428 Elm St. Louisville, KY 40216
+                    </div>
+                </div>
+
+                <div class="mail">
+                    Mail Us:
+                    <div class="mail-div">
+                        lazeezalouisville@example.com
+                    </div>
+                </div>
+
+            </div>
+            <div class="social-media">
+                <h3 id="h3">Follow Us:</h3>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
+        <form action="NewsletterMgnt\subscribe.php" method="post">
+            <h4 class="info">Subscribe to our Newsletter</h4>
+            <form>
+                <input type="text" name="email" placeholder="Email Address" required><br>
+                <input type="submit" placeholder="Sign Up" value="Submit">
+        </form>
+
+        <div class="copyright">
+            <div class="CRL">
+                <a href="home.html">
+                    <img src="Images/headertransparent1.png" alt="logo">
+                </a>
+            </div>
+            <div class="CRM">
+                <p><strong>Credits to Website Creators:</strong><br>
+                    Hussein Almosawi<br>
+                    Julia Callihan<br>
+                    Raymond Carroll
+                </p>
+            </div>
+            <div class="CRR">
+                <a href="copyright.html"><button class="copyright-button">Copyright Information</button></a>
+            </div>
+        </div>
+</body>
+
+</html>

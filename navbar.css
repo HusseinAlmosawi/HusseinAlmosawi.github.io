@@ -1,0 +1,274 @@
+.navbar {
+    background-color: rgb(32, 40, 46);
+    z-index: 1000;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    position: fixed;
+    box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2);
+    border: none;
+    clear: both;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.right {
+    text-align: center;
+    align-items: center;
+    flex: 2;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.headerimage {
+    margin-left: 15px;
+    height: 80px;
+    display: inline;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.headerimage:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.link {
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+    color: white;
+    background-color: rgb(32, 40, 46);
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 5%;
+    transition: opacity .25s;
+    font-family: 'Raleway', sans-serif;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: rgb(194, 194, 196);
+}
+
+button {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 1330px) {
+    .navbar {
+        height: 100px;
+        width: 100%;
+        flex-direction: row;
+        top: 0;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        flex: .5;
+    }
+    .right {
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .link {
+        font-size: 18px;
+        margin-right: 3%;
+    }
+
+    .headerimage {
+        height: 70px;
+        display: inline;
+        align-items: center;
+    }
+}
+
+@media (min-width: 830px) and (max-width: 1050px) {
+    .navbar {
+        height: 100px;
+        width: 100%;
+        flex-direction: row;
+        top: 0;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        flex: .4;
+    }
+    .right {
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .link {
+        font-size: 16px;
+        margin-right: 1%;
+    }
+    button {
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+    .headerimage {
+        height: 70px;
+        display: inline;
+        align-items: center;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 830px) {
+    .navbar {
+        height: 60px;
+        width: 100%;
+        flex-direction: row;
+        top: 0;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        flex: 0;
+    }
+    .right {
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .link {
+        font-size: 14px;
+        margin-right: 0;
+        float: none;
+
+    }
+    button {
+        padding: 2px;
+        border-radius: 15px;
+    }
+
+    .headerimage {
+        height: 30px;
+        display: inline;
+        align-items: center;
+    }
+}
+
+@media (max-width: 530px) {
+    .navbar {
+        height: 50px;
+        width: 100%;
+        flex-direction: row;
+        top: 0;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        flex: 0;
+    }
+    .right {
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .link {
+        font-size: 12px;
+        margin-right: 0;
+        float: none;
+
+    }
+    button {
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+    .headerimage {
+        height: 28px;
+        display: inline;
+        align-items: center;
+    }
+
+    .headerimage:hover {
+        transform: none;
+        transition: none;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 610px) and (max-width: 830px) {
+    button {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .headerimage:hover {
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .navbar {
+        height: 50px;
+        width: 100%;
+        flex-direction: row;
+        top: 0;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        flex: 0;
+    }
+    .right {
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .link {
+        font-size: 25px;
+        margin-right: 10px;
+        float: none;
+
+    }
+    button {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .headerimage {
+        margin-left: 10px;
+        height: 40px;
+        display: inline;
+        align-items: center;
+    }
+
+    .headerimage:hover {
+        transform: none;
+        transition: none;
+        margin-left: 12px;
+    }
+}

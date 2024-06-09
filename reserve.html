@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <title>Reservations</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <link rel="stylesheet" href="reserve.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="navbar">
+        <div class="left">
+            <a href="home.html">
+                <img src="Images/headertransparent1.png" alt="lazeeza logo" class="headerimage">
+            </a>
+        </div>
+        <div class="right">
+            <a href="review.html" target="_self"><button class="link">Reviews</button></a>
+            <a href="about.html" target="_self"><button class="link">About Us</button></a>
+            <a href="reserve.html" target="_self"><button class="link">Reservations</button></a>
+            <a href="contact.html" target="_self"><button class="link">Contact Us</button></a>
+            <a href="menu.html" target="_self"><button class="link">Menu</button></a>
+            <a href="home.html" target="_self"><button class="link">Home</button></a>
+        </div>
+    </div>
+    <!--Header-->
+    <div class="header">
+        <h1>Reservations</h1>
+        <h2>RESERVE YOUR SPOT</h2>
+        <p>Lazeeza wants to make saving your seat as accessible and easy as possible.</p>
+    </div>
+    <div class="reserve">
+        <form action="mailto:lazeezalouisville@example.com" method="get" enctype="text/plain">
+            <label for="name">Name</label><br>
+            <input type="text" placeholder="First Name" name="name" class="ph" id="fname">
+            <input type="text" placeholder="Last Name" class="ph" id="lname"><br>
+            <label for="info">Reservation Information</label><br>
+            <input type="date" name="info" class="ph" id="date" value="mm/dd/yyyy">
+            <input type="time" class="ph" id="time" value="--:-- --"><br>
+            <input type="text" placeholder="Number of People" class="ph" id="num"><br>
+            <label for="contact">Contact Information</label><br>
+            <input type="text" placeholder="E-mail Address" name="contact" class="ph" id="email">
+            <input type="text" placeholder="Phone Number" class="ph" id="phone"><br>
+            <input type="button" value="Submit" class="submit" onclick="alert('Thank you for making a reservation at Lazeeza!')">
+        </form>
+    </div>
+</body>
+</html>

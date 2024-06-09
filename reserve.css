@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Configurations */
+.header {
+    margin-top: 120px;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    color: rgb(32, 40, 46);
+    background-color: rgb(228, 231, 212);
+}
+
+/* Header 1, 2, p Configurations */
+
+.header h1 {
+    width: 100%;
+    color: rgb(32, 40, 46);
+    background-color: rgb(228, 231, 212);
+    font-family: 'Raleway', sans-serif;
+    font-size: 60pt;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+}
+
+/* Main Reservation Div */
+
+.reserve {
+    background-color: rgb(32, 40, 46);
+    color: rgb(228, 231, 212);
+    text-align: center;
+}
+
+/* Form */
+
+label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+}
+
+br {
+    margin-bottom: 25px;
+}
+
+form {
+    padding: 50px;
+    margin: auto;
+}
+
+input {
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(228, 231, 212);
+    font-family: 'Raleway', sans-serif;
+    font-size: 13pt;
+}
+
+/* input[type="text"] {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13pt;
+} */
+
+input:hover {
+    border-color: white;
+    border-width: 2px;
+}
+
+.ph::placeholder {
+    color: rgb(32, 40, 46);
+    opacity: .8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13pt;
+}
+
+.submit {
+    text-decoration: none;
+    width: calc(50% + 5px);
+    height: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15pt;
+    color: rgb(228, 231, 212);
+    background-color: #DAA520;
+    border-color: rgb(228, 231, 212);
+    border-width: 2px;
+    margin-top: 10px;
+    transition: transform 250ms;
+}
+
+.submit:hover {
+    background-color: rgb(228, 231, 212);
+    color: #DAA520;
+    transition: 0.2s;
+    border-color: #DAA520;
+    border-width: 2px;
+    transform: translateY(-10px);
+}
+
+/* Input Configurations */
+
+#fname {
+    width: calc(25% - 2.5px);
+}
+
+#lname {
+    width: calc(25% - 2.5px);
+}
+
+#date {
+    width: calc(25% - 2.5px);
+}
+
+#time {
+    width: calc(25% - 2.5px);
+}
+
+#num {
+    width: calc(50% + 5px);
+}
+
+#email {
+    width: calc(50% + 5px);
+    margin-bottom: 5px;
+}
+
+#phone {
+    width: calc(50% + 5px);
+}
+
+.ph {
+    padding-left: 5px
+}
+
+@media (max-width: 1330px) {
+    .header {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 830px) {
+    .header {
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width: 530px) {
+    .header {
+        margin-top: 50px;
+    }
+
+    form #fname {
+        width: 33%;
+    }
+
+    form #lname {
+        width: 33%;
+    }
+
+    form #date {
+        width: 150px;
+    }
+
+    form #time {
+        width: 75px;
+    }
+
+    form #num {
+        width: 240px;
+    }
+
+    form #email {
+        width: 125px;
+    }
+
+    form #phone {
+        width: 100px;
+    }
+
+    form .submit {
+        width: 250px;
+    }
+
+    .ph::placeholder {
+        font-size: 9pt;
+    }
+
+    .header h1 {
+        font-size: 30pt;
+        padding: 30px 0;
+    }
+
+    .header h2 {
+        font-size: 15pt;
+    }
+
+    .header p {
+        font-size: 10pt;
+        padding: 5px 20px;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .header {
+        margin-top: 50px;
+    }
+
+    .header h1 {
+        font-size: 70pt;
+        padding: 30px 0;
+    }
+
+    .header h2 {
+        font-size: 30pt;
+    }
+
+    .header p {
+        font-size: 20pt;
+        padding: 5px 50px;
+    }
+
+    .reserve {
+        height: 70%;
+    }
+
+    input[type="text"] {
+        font-family: 'Raleway', sans-serif;
+        font-size: 20pt;
+    }
+
+    label {
+        font-size: 40pt;
+    }
+
+    form {
+        height: 900px;
+        padding-top: 20%;
+    }
+
+    input {
+        height: 100px;
+    }
+
+    .ph::placeholder {
+        font-size: 70pt;
+    }
+
+    form #fname {
+        width: 388px;
+    }
+
+    form #lname {
+        width: 437px;
+    }
+
+    form #date {
+        width: 440px;
+        margin-bottom: 5px;
+    }
+
+    form #time {
+        width: 360px;
+        margin-bottom: 5px;
+    }
+
+    form #num {
+       width: 835px;
+    }
+
+    form #email {
+        width: 425px;
+    }
+
+    form #phone {
+        width: 400px;
+    }
+
+    #phone::placeholder {
+        font-size: 20pt;
+    }
+
+    #fname::placeholder {
+        font-size: 20pt;
+    }
+
+    #fname::placeholder {
+        font-size: 20pt;
+    }
+    
+    #date::-ms-value {
+        font-size: 20pt;
+    }
+
+    #time::-ms-value {
+        font-size: 20pt;
+    }
+
+    #email::placeholder {
+        font-size: 20pt;
+    }
+
+    #lname::placeholder {
+        font-size: 20pt;
+    }
+
+    #num::placeholder {
+        font-size: 20pt;
+    }
+
+    form .submit {
+        width: 850px;
+        height: 100px;
+        font-size: 30pt;
+        color: rgb(228, 231, 212);
+    }
+    .ph::placeholder {
+        font-size: 9pt;
+    }
+}
